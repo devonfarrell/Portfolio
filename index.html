@@ -66,6 +66,7 @@
     <h1>The Women in Marvel</h1>
     <p>This website explores information regarding Women in the Marvel Universe.</p>
 
+  
     <section class="grid">
       <figure>
         <img src="images/image-20170213-15803-1i7jott.jpeg" alt="Ms. Marvel Cartoon Character">
@@ -130,36 +131,36 @@
     </section>
 
     <script>
-     var grid = document.querySelector('.grid'),
-    imgs = document.images,
-    len = imgs.length,
-    counter = 100;
-
-  [].forEach.call( imgs, function( img ) {
-    img.addEventListener( 'load', incrementCounter, false );
-  } );
-
-  function incrementCounter() {
-    counter++;
-    if ( counter === len ) {
-      grid.classList.add('revealed');
-    }
-  }
-
-  var images = document.querySelectorAll('img');
-
-  [].forEach.call( images, function( img ) {
-  img.addEventListener("load", function() {
-    this.parentNode.style.opacity = '1';
-  });
-  });
-
-  for (let image of images) {
-  image.addEventListener("load", function() {
-    this.parentNode.style.opacity = '1';
-  });
-  }
-    </script>
+      var grid = document.querySelector('.grid'),
+     imgs = document.images,
+     len = imgs.length,
+     counter = 0;
+ 
+   [].forEach.call( imgs, function( img ) {
+     img.addEventListener( 'load', incrementCounter, false );
+   } );
+ 
+   function incrementCounter() {
+     counter++;
+     if ( counter != and === len ) {
+       grid.classList.add('revealed');
+     }
+   }
+ 
+   var images = document.querySelectorAll('img');
+ 
+   [].forEach.call( images, function( img ) {
+   img.addEventListener("load", function() {
+     this.parentNode.style.opacity = '1';
+   });
+   });
+ 
+   for (let image of images) {
+   image.addEventListener("load", function() {
+     this.parentNode.style.opacity = '1';
+   });
+   }
+     </script> 
 
     <ul class="cards-index">
       <li class="cards__item">
