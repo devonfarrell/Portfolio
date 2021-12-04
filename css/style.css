@@ -1143,6 +1143,24 @@ button {
 		opacity: 100%;
 	}
 
+	figure:hover figcaption:before,
+  figure:hover figcaption:after{
+	  transform: none;
+  }
+
+	figcaption div {
+		transform: none;
+	}
+
+	figcaption > div div{
+		transform: none;
+	}
+
+	figcaption:before,
+  figcaption:after {
+	  transform: none;
+  }
+
 }
 
 	
