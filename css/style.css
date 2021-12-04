@@ -380,7 +380,7 @@ nav ul {
   
   .grid figcaption h3 {
 	font-weight: 700;
-	color: #fdfdfd;
+	color:  red;
 	margin-left: 10px;
 	font-size: calc(.5em + 1.7vw);
 	line-height: 1;
@@ -404,7 +404,7 @@ nav ul {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	background: rgba(237, 28, 36, 0.4);
+	background: white;
 	height: 150%;
 	transition: .3s;
 	transform: scaleY(0);
@@ -418,7 +418,7 @@ nav ul {
   
   figcaption:after {
 	height: 120%;
-	background: rgba(237, 28, 36, 0.5);
+	background: rgb(0,0,0, 0.7);
 	clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
   }
   
@@ -460,7 +460,7 @@ nav ul {
   }
 
   :root {
-	--main-color: #00FFFF;
+	--main-color: white;
 	--border-width: .24vw;
 	--gutter: 2vw;
   }
@@ -476,8 +476,8 @@ nav ul {
   
   body .container-5 {
 	margin: 0;
-	color: #fff;
-	background-color: lightgray;
+	color: white;
+	background-color: white;
 	font: 0/1 'Oswald', sans-serif;
 	text-align: center;
   }
@@ -491,13 +491,14 @@ nav ul {
 	margin: 0 5px 15px;
 	font-size: 45px;
 	line-height: 1.2;
+	color: black;
 	text-transform: uppercase;
-	text-shadow: 0 0 20px #000;
+	text-shadow: 0 0 20px aqua;
   }
   
-  .marvel {
-	color: #c00;
-  }
+  /* .marvel {
+	color: magenta;
+  } */
   
   .container-5 input {
 	position: absolute;
@@ -525,7 +526,7 @@ nav ul {
 	width: 18px;
 	height: 18px;
 	border: 2px solid #fff;
-	background-color: #444;
+	background-color: white;
   }
   
   .container-5 input:focus + label{ 
@@ -1148,8 +1149,16 @@ button {
 	  }
 
 	.flip-card-inner {
-        transition: transform none;
+        transition: none;
     }
+
+	#original:checked ~ .characters [data-teams~="original"] img,
+	#force:checked ~ .characters [data-teams~="force"] img,
+	#factor:checked ~ .characters [data-teams~="factor"] img,
+	#hellfire:checked ~ .characters [data-teams~="hellfire"] img {
+		animation: none;
+		opacity: 100%;
+	}
 
 }
 
