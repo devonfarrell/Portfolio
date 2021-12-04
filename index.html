@@ -137,7 +137,7 @@
      counter = 0;
  
    [].forEach.call( imgs, function( img ) {
-     img.addEventListener( 'loadstart', incrementCounter, false );
+     img.addEventListener( 'load', incrementCounter, false );
    } );
  
    function incrementCounter() {
