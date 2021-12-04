@@ -239,8 +239,8 @@ nav ul {
 	transition: .2s;
   
 	/* Fix for Safari 10  */
-	 display: flex;
-	flex-direction: column;
+	 /* display: flex;
+	flex-direction: column; */
   }
   
   .grid figure img {
