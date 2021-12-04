@@ -383,7 +383,7 @@ nav ul {
 	color:  red;
 	margin-left: 10px;
 	font-size: calc(.5em + 1.7vw);
-	line-height: 1;
+	/* line-height: 1; */
   }
   
   /* Caption effect */
@@ -950,7 +950,7 @@ button {
 
 	img{
 		height: 200px;
-		width:100%
+		width:100%;
 	}
 
 
@@ -1054,7 +1054,7 @@ button {
 @media screen and (min-width: 850px) { 
 	img{
 		height: 200px; 
-		width:100%;
+		width: 100%;
 	}
 
 
@@ -1101,7 +1101,7 @@ button {
 	}
 
 	.cards__image{
-		width:100%;
+		width: 80%;
 		
 	}
 
@@ -1125,7 +1125,7 @@ button {
 		width: 960px;
 	  }
 
-	  .characters img {
+	.characters img {
 		width: 100px;
 	  }
 
