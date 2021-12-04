@@ -547,9 +547,9 @@ nav ul {
 	padding: 0;
   }
 
-  .characters {
+  /* .characters {
     width: 480px;
-  }
+  } */
   
   .characters li {
 	display: inline-block;
