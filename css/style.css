@@ -236,7 +236,7 @@ nav ul {
 	background: var(--main-color);
 	position: relative;
 	opacity: 0;
-	/* transition: .2s; */
+	transition: .2s;
   
 	/* Fix for Safari 10  */
 	 display: flex;
@@ -249,7 +249,7 @@ nav ul {
 	height: 100%;
 	object-fit: cover;
 	transition: .2s;
-	will-change: transform;
+	/* will-change: transform; */
 	clip-path:
 	  polygon(
 		var(--border-width) var(--border-width),
