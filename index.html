@@ -134,10 +134,10 @@
       var grid = document.querySelector('.grid'),
      imgs = document.images,
      len = imgs.length,
-     counter = 10;
+     counter = 0;
  
    [].forEach.call( imgs, function( img ) {
-     img.addEventListener( 'load', incrementCounter, false );
+     img.addEventListener( 'loadstart', incrementCounter, false );
    } );
  
    function incrementCounter() {
