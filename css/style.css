@@ -239,8 +239,8 @@ nav ul {
 	transition: .2s;
   
 	/* Fix for Safari 10  */
-	 /* display: flex;
-	flex-direction: column; */
+	 display: flex;
+	flex-direction: column;
   }
   
   .grid figure img {
@@ -248,8 +248,8 @@ nav ul {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	/* transition: .2s;
-	will-change: transform; */
+	transition: .2s;
+	will-change: transform;
 	clip-path:
 	  polygon(
 		var(--border-width) var(--border-width),
@@ -259,7 +259,7 @@ nav ul {
 	  );
   
 	/* Fix for Safari 10 */
-	/* flex-grow: 1; */
+	flex-grow: 1;
   }
   
   /* figure:hover img {
