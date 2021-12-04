@@ -790,6 +790,7 @@ button {
 	padding: 16px;
 	text-align: center;
 	background-color: #f1f1f1;
+	border: 1px solid aqua;
   }
 
 
@@ -929,7 +930,7 @@ button {
     margin-top: 0;
   }
 
-  /* animation page */
+  /* animation */
 
 
 #logo{
