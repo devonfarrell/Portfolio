@@ -1,7 +1,7 @@
 # SI 539 - Portfolio
 
 
+![image](https://user-images.githubusercontent.com/70960248/144722323-774a6430-461f-40eb-b640-5ddddbbe3f12.png)
 
-![image](https://user-images.githubusercontent.com/70960248/144722309-decd2c45-bdfd-4828-80cf-4a217c621f97.png)
 
-See the evolution and depcition of Women in the Marvel Universe 
+See the evolution and depcition of Women in the Marvel Universe in this unqiue Website!
