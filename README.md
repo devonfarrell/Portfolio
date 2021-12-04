@@ -1,4 +1,4 @@
-# SI 539 - Portfolio
+# SI 539 - Women in Marvel Portfolio
 
 
 ![image](https://user-images.githubusercontent.com/70960248/144722323-774a6430-461f-40eb-b640-5ddddbbe3f12.png)
