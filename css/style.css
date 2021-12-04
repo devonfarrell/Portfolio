@@ -541,7 +541,7 @@ nav ul {
   /* width is controlled here and in media queries to ensure that there's always an even number of columns (prevents orphans) */
   .characters {
 	display: inline-block;
-	width: 240px;
+	width: 140px;
 	list-style-type: none;
 	margin: 15px -5px 0;
 	padding: 0;
