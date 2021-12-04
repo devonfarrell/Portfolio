@@ -131,21 +131,21 @@
     </section>
 
     <script>
-  //     var grid = document.querySelector('.grid'),
-  //    imgs = document.images,
-  //    len = imgs.length,
-  //    counter = 0;
+      var grid = document.querySelector('.grid'),
+     imgs = document.images,
+     len = imgs.length,
+     counter = 0;
  
-  //  [].forEach.call( imgs, function( img ) {
-  //    img.addEventListener( 'loadstart', incrementCounter, false );
-  //  } );
+   [].forEach.call( imgs, function( img ) {
+     img.addEventListener( 'loadstart', incrementCounter, false );
+   } );
  
-  //  function incrementCounter() {
-  //    counter++;
-  //    if ( counter != or == len ) {
-  //      grid.classList.add('revelead');
-  //    }
-  //  }
+   function incrementCounter() {
+     counter++;
+     if ( counter != or == len ) {
+       grid.classList.add('revelead');
+     }
+   }
  
    var images = document.querySelectorAll('img');
  
@@ -155,11 +155,12 @@
   //  });
   //  });
  
-   for (let image of images) {
-   image.addEventListener("load", function() {
-     this.parentNode.style.opacity = '1';
-   });
-   }
+  for (let image of images) {
+  image.addEventListener("load", function() {
+    this.parentNode.style.opacity = '1';
+  });}
+  
+
      </script> 
 
     <ul class="cards-index">
@@ -232,4 +233,4 @@
     &copy; Devon Farrell - Web Design 2021</p>
 </footer>
 </body>
-</html>
+</html>      
