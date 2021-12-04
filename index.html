@@ -137,26 +137,26 @@
      counter = 0;
  
    [].forEach.call( imgs, function( img ) {
-     img.addEventListener( 'scroll', incrementCounter, false );
+     img.addEventListener( 'loadstart', incrementCounter, false );
    } );
  
    function incrementCounter() {
      counter++;
      if ( counter != and === len ) {
-       grid.classList.add('revealed');
+       grid.classList.add('loadstart');
      }
    }
  
    var images = document.querySelectorAll('img');
  
    [].forEach.call( images, function( img ) {
-   img.addEventListener("scroll", function() {
+   img.addEventListener("loadstart", function() {
      this.parentNode.style.opacity = '1';
    });
    });
  
    for (let image of images) {
-   image.addEventListener("scroll", function() {
+   image.addEventListener("loadstart", function() {
      this.parentNode.style.opacity = '1';
    });
    }
