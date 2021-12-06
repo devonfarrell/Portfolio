@@ -2,8 +2,6 @@
 body{
 	background-color: lightcoral;
 	font-size: 14px;
-	/* margin: 0;
-	padding: 0; */
 	font-family: 'Open Sans', serif;
   }
   
@@ -60,9 +58,6 @@ li.current a{
 }
 
 
-/* nav ul{
-	list-style-type: none;
-} */
   
 nav li{
 	display: inline;
@@ -103,7 +98,7 @@ nav a{
   }
 
 header{
-	background-color: blue;
+	background-color: black;
 	width: 100%;
 	/* height: 100px; */
 	border-bottom: 1px solid aqua;
@@ -229,10 +224,7 @@ nav ul {
   .grid {
     grid-template-columns: 1fr;
   }
-  /* .grid figure {
-    grid-column-end: div 1!important;
-    grid-row: auto!important;
-  }  */
+  
   
   .grid figure {
 	overflow: hidden;
@@ -240,8 +232,6 @@ nav ul {
 	position: relative;
 	opacity: 1;
 	transition: .2s;
-  
-	/* Fix for Safari 10  */
 	 display: flex;
 	flex-direction: column;
   }
@@ -262,15 +252,8 @@ nav ul {
 		var(--border-width) calc(100% - var(--border-width))
 	  );
   
-	/* Fix for Safari 10 */
 	flex-grow: 1;
   }
-  
-  /* figure:hover img {
-	/*transform: scale(.995);*/
-  /* } */ 
-  
-  /* ========= LAYOUT AND CLIP-PATH ======== */
   
   .grid figure:nth-child(1) {
 	grid-column: 1 / 2;
@@ -285,7 +268,7 @@ nav ul {
 		calc(100% - var(--border-width)) calc(66% - var(--border-width)),
 		var(--border-width) calc(85% - var(--border-width))
 	  );
-	/*min-height: 30.5vw;*/
+	
   }
   
   .grid figure:nth-child(2) {
@@ -337,7 +320,6 @@ nav ul {
 	  88% 100%,
 	  0% 100%
 	);
-	/*width: 115%;*/
 	width: calc(100% + var(--gutter));
   }
   .grid figure:nth-child(8) img {
@@ -365,8 +347,6 @@ nav ul {
 	  );
   }
   
-  /* ======= CAPTION ======= */
-  
   .grid figcaption {
 	position: absolute;
 	bottom: 0;
@@ -382,15 +362,13 @@ nav ul {
 	padding-left: 5%;
   }
   
-  .grid figcaption h3 {
+  .grid figcaption h2 {
 	font-weight: 400;
 	color:  red;
 	margin-bottom: 0px;
 	font-size: calc(.5em + 1.7vw);
-	/* line-height: 0.3;  */
   }
   
-  /* Caption effect */
   
   figure:hover figcaption div {
 	transform: none;
@@ -482,9 +460,6 @@ nav ul {
 	text-shadow: 0 0 20px aqua;
   }
   
-  /* .marvel {
-	color: magenta;
-  } */
   
   .container-5 input {
 	position: absolute;
@@ -524,8 +499,6 @@ nav ul {
 	background-color: #c00;
   }
 
-  
-  /* width is controlled here and in media queries to ensure that there's always an even number of columns (prevents orphans) */
   .characters {
 	display: inline-block;
 	width: 100px;
@@ -588,7 +561,6 @@ nav ul {
 	animation: avatar .3s forwards;
   }
   
-  /* fade in and expand image to full size, with a slight bounce */
   @keyframes avatar {
 	70% {
 	  opacity: 1;
@@ -1016,24 +988,13 @@ button {
 	grid-template-rows: 0.44fr 0.1875fr 0.4fr .9fr;
 	}
 
-	
-	 
-	  /* .grid figure:nth-child(2),
-	  .grid figure:nth-child(8),
-	  .grid figure:nth-child(9),
-	  .grid figure:nth-child(10) {
-		grid-row: auto / span 2 !important;
-		width: auto;
-	  }   */
 
 }
 	
 
 @media screen and (min-width: 850px) { 
 	img{
-		height: 200px; 
 		width: 550px;
-		/* margin: 5px; */
 	}
 
 
@@ -1073,11 +1034,6 @@ button {
 		padding-top: 66.6%; 
 	  }
 
-	
-	.cards__item{
-		width:50%;
-		
-	}
 
 	.cards__image{
 		width: 80%;
@@ -1104,15 +1060,10 @@ button {
 		width: 960px;
 	  }
 
-	.characters img {
-		width: 100px;
-	  }
 
-	
-
-	  .grid {
+	.grid {
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-		grid-template-rows: 0.44fr 0.1875fr 0.35fr .6fr;
+		grid-template-rows: 0.3fr 0.1875fr 0.35fr .56fr;
 		grid-auto-rows: 200px;
 	  } 
 
@@ -1133,7 +1084,10 @@ button {
 	  }
 
 	.flip-card-inner {
-        transition: transform none;
+        transition: none;
+    }
+	.flip-card-back {
+        transition:  none;
     }
 
 	#original:checked ~ .characters [data-teams~="original"] img,
@@ -1162,9 +1116,10 @@ button {
 	  transform: none;
   }
 
+  header{
+	  background-attachment: intial;
+  }
+
 }
-
-
-
 
 	
