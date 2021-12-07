@@ -1125,7 +1125,7 @@ button {
   }
 
   header{
-	 background-attachment: initial;
+	 background-attachment: fixed;
   }
 
 }
