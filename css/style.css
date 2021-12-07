@@ -995,6 +995,7 @@ button {
 @media screen and (min-width: 850px) { 
 	img{
 		width: 550px;
+		padding: 5px;
 	}
 
 
