@@ -1090,6 +1090,13 @@ button {
 	.flip-card-back {
         transition:  none;
     }
+	
+	.flip-card:hover .flip-card-inner,
+	.flip-card:focus-within .flip-card-inner,
+	.flip-card:active .flip-card-inner,
+	.flip-card:focus .flip-card-inner {
+  	transform: none;
+	}
 
 	#original:checked ~ .characters [data-teams~="original"] img,
 	#force:checked ~ .characters [data-teams~="force"] img,
@@ -1118,7 +1125,7 @@ button {
   }
 
   header{
-	  background-attachment: intial;
+	 background-attachment: initial;
   }
 
 }
